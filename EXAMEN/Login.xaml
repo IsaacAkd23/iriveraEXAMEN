@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EXAMEN.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login" TextColor="LightSkyBlue" FontSize="34" HorizontalTextAlignment="Center" />
+            <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2020/05/logo-UISRAEL.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Usuario" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btnInciar" Text="INICIAR SESION" Clicked="btnInciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
